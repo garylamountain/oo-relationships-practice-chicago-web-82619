@@ -21,5 +21,23 @@ peanuts = Ingredient.new("Peanuts", 50, cookies)
 
 # puts chips.name == "Chips"
 
+pf = Gym.new("Planet Fitness")
+golds = Gym.new("Golds Gym")
+arnold = Gym.new("Arnold Schwarzenegger's Basement")
+
+biff = Trainer.new("Biff",pf)
+baff = Trainer.new("Baff",pf)
+buff = Trainer.new("Buff",pf)
+swaleman = Trainer.new("Swaleman",golds)
+sweleman = Trainer.new("Sweleman",golds)
+
+client1 = Client.new("A",biff,pf)
+client2 = Client.new("B",biff,pf)
+client3 = Client.new("C",baff,pf)
+client4 = Client.new("D",buff,pf)
+client5 = Client.new("E",swaleman,golds)
+client6 = Client.new("F",sweleman,golds)
+
+
 binding.pry
 0
